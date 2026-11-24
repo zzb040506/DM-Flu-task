@@ -2,3 +2,7 @@ __pycache__/
 *.py[cod]
 .DS_Store
 .ipynb_checkpoints/
+
+# 比赛数据需自行下载，不纳入版本管理
+data/*
+!data/.gitkeep

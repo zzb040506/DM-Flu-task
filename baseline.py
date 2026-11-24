@@ -11,7 +11,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import roc_auc_score
 from lightgbm import LGBMClassifier
 ROOT=Path(__file__).resolve().parent
-DATA=ROOT.parent/'data'
+# 优先读取仓库内的 data/，同时兼容把数据放在上一级的旧用法
+DATA=ROOT/'data' if (ROOT/'data'/'training_set_features.csv').exists() else ROOT.parent/'data'
 x=pd.read_csv(DATA/'training_set_features.csv').drop(columns='respondent_id')
 y=pd.read_csv(DATA/'training_set_labels.csv')[['h1n1_vaccine','seasonal_vaccine']]
 z=np.load(ROOT/'artifacts/split.npz');tr,va=z['dev'],z['holdout']

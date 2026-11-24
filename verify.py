@@ -4,8 +4,10 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import roc_auc_score
 ROOT=Path(__file__).resolve().parent
+# 优先读取仓库内的 data/，同时兼容把数据放在上一级的旧用法
+DATA=ROOT/'data' if (ROOT/'data'/'training_set_features.csv').exists() else ROOT.parent/'data'
 T=['h1n1_vaccine','seasonal_vaccine']
-template=pd.read_csv(ROOT.parent/'data/submission_format.csv')
+template=pd.read_csv(DATA/'submission_format.csv')
 results={}
 for f in sorted(ROOT.glob('submission_*.csv')):
  d=pd.read_csv(f)
@@ -14,7 +16,7 @@ for f in sorted(ROOT.glob('submission_*.csv')):
  a=d[T].to_numpy();assert np.isfinite(a).all() and ((a>=0)&(a<=1)).all()
  results[f.name]={'rows':len(d),'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'range':[float(a.min()),float(a.max())]}
 assert len(results)>=3
-z=np.load(ROOT/'artifacts/predictions.npz'); y=pd.read_csv(ROOT.parent/'data/training_set_labels.csv')[T].to_numpy()
+z=np.load(ROOT/'artifacts/predictions.npz'); y=pd.read_csv(DATA/'training_set_labels.csv')[T].to_numpy()
 recipe=json.loads((ROOT/'artifacts/frozen_recipe.json').read_text())
 from experiment import combine
 pred=np.column_stack([combine(z['holdout'][:,:,i],recipe['weights'][i],recipe['modes'][i]) for i in range(2)])

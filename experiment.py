@@ -17,7 +17,8 @@ from catboost import CatBoostClassifier
 from scipy.special import expit, logit
 warnings.filterwarnings('ignore',category=FutureWarning)
 ROOT=Path(__file__).resolve().parent
-DATA=ROOT.parent/'data'
+# 优先读取仓库内的 data/，同时兼容把数据放在上一级的旧用法
+DATA=ROOT/'data' if (ROOT/'data'/'training_set_features.csv').exists() else ROOT.parent/'data'
 OUT=ROOT/'artifacts'; OUT.mkdir(exist_ok=True)
 TARGETS=['h1n1_vaccine','seasonal_vaccine']
 SEED=20261115
