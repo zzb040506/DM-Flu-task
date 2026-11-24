@@ -1,0 +1,13 @@
+{
+  "joint_weights": [
+    0.5,
+    0.5
+  ],
+  "joint_development_auc": 0.8677927775989618,
+  "base_development_auc": 0.8678639664565442,
+  "blended_development_auc": 0.8689032629900717,
+  "joint_holdout_auc": 0.8686361088891577,
+  "blended_holdout_auc": 0.8700386075191642,
+  "blended_descriptive_cv_auc": 0.8704893027290536,
+  "official_score": null
+}

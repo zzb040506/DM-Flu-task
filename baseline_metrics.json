@@ -1,0 +1,15 @@
+{
+  "model": "Smith-MMA LightGBM saved notebook hyperparameters",
+  "targets": [
+    {
+      "target": "h1n1_vaccine",
+      "auc": 0.8722931625778427
+    },
+    {
+      "target": "seasonal_vaccine",
+      "auc": 0.8645245511602786
+    }
+  ],
+  "mean_auc": 0.8684088568690607,
+  "note": "Historical parameters originated in original notebook; same reserved rows as new experiment."
+}

@@ -1,0 +1,107 @@
+TUNE lgb_h1n1_vaccine trial=0 auc=0.867986 iterations=[1056, 948, 944]
+TUNE lgb_h1n1_vaccine trial=1 auc=0.868251 iterations=[692, 741, 1012]
+TUNE lgb_h1n1_vaccine trial=2 auc=0.865670 iterations=[99, 116, 134]
+TUNE lgb_h1n1_vaccine trial=3 auc=0.867293 iterations=[469, 432, 315]
+TUNE lgb_h1n1_vaccine trial=4 auc=0.868697 iterations=[216, 193, 159]
+TUNE lgb_h1n1_vaccine trial=5 auc=0.867951 iterations=[109, 102, 95]
+TUNE lgb_h1n1_vaccine trial=6 auc=0.868969 iterations=[290, 260, 204]
+TUNE lgb_h1n1_vaccine trial=7 auc=0.869190 iterations=[383, 362, 259]
+TUNE lgb_h1n1_vaccine trial=8 auc=0.866122 iterations=[345, 255, 217]
+TUNE lgb_h1n1_vaccine trial=9 auc=0.865912 iterations=[1411, 670, 537]
+TUNE lgb_h1n1_vaccine trial=10 auc=0.865540 iterations=[686, 568, 275]
+TUNE lgb_h1n1_vaccine trial=11 auc=0.869493 iterations=[510, 454, 303]
+TUNE lgb_h1n1_vaccine trial=12 auc=0.869558 iterations=[547, 403, 278]
+TUNE lgb_h1n1_vaccine trial=13 auc=0.866786 iterations=[667, 369, 311]
+TUNE lgb_seasonal_vaccine trial=0 auc=0.862447 iterations=[279, 270, 321]
+TUNE lgb_seasonal_vaccine trial=1 auc=0.862251 iterations=[134, 162, 144]
+TUNE lgb_seasonal_vaccine trial=2 auc=0.862762 iterations=[348, 268, 252]
+TUNE lgb_seasonal_vaccine trial=3 auc=0.863011 iterations=[636, 712, 600]
+TUNE lgb_seasonal_vaccine trial=4 auc=0.859536 iterations=[193, 226, 172]
+TUNE lgb_seasonal_vaccine trial=5 auc=0.862680 iterations=[916, 906, 778]
+TUNE lgb_seasonal_vaccine trial=6 auc=0.862342 iterations=[511, 539, 398]
+TUNE lgb_seasonal_vaccine trial=7 auc=0.863148 iterations=[354, 360, 294]
+TUNE lgb_seasonal_vaccine trial=8 auc=0.862173 iterations=[295, 310, 298]
+TUNE lgb_seasonal_vaccine trial=9 auc=0.862622 iterations=[386, 289, 295]
+TUNE lgb_seasonal_vaccine trial=10 auc=0.862884 iterations=[334, 351, 241]
+TUNE lgb_seasonal_vaccine trial=11 auc=0.863276 iterations=[544, 623, 465]
+TUNE lgb_seasonal_vaccine trial=12 auc=0.863055 iterations=[444, 456, 437]
+TUNE lgb_seasonal_vaccine trial=13 auc=0.862642 iterations=[315, 382, 312]
+TUNE xgb_h1n1_vaccine trial=0 auc=0.868207 iterations=[1091, 740, 932]
+TUNE xgb_h1n1_vaccine trial=1 auc=0.866911 iterations=[260, 181, 130]
+TUNE xgb_h1n1_vaccine trial=2 auc=0.866638 iterations=[675, 457, 385]
+TUNE xgb_h1n1_vaccine trial=3 auc=0.866672 iterations=[235, 196, 121]
+TUNE xgb_h1n1_vaccine trial=4 auc=0.866502 iterations=[618, 376, 506]
+TUNE xgb_h1n1_vaccine trial=5 auc=0.868583 iterations=[446, 331, 383]
+TUNE xgb_h1n1_vaccine trial=6 auc=0.868842 iterations=[411, 316, 349]
+TUNE xgb_h1n1_vaccine trial=7 auc=0.869322 iterations=[405, 416, 425]
+TUNE xgb_seasonal_vaccine trial=0 auc=0.862546 iterations=[352, 279, 376]
+TUNE xgb_seasonal_vaccine trial=1 auc=0.862795 iterations=[349, 229, 238]
+TUNE xgb_seasonal_vaccine trial=2 auc=0.863268 iterations=[792, 663, 664]
+TUNE xgb_seasonal_vaccine trial=3 auc=0.862952 iterations=[271, 274, 274]
+TUNE xgb_seasonal_vaccine trial=4 auc=0.862095 iterations=[808, 903, 727]
+TUNE xgb_seasonal_vaccine trial=5 auc=0.863652 iterations=[962, 873, 1026]
+TUNE xgb_seasonal_vaccine trial=6 auc=0.863168 iterations=[641, 462, 594]
+TUNE xgb_seasonal_vaccine trial=7 auc=0.863215 iterations=[642, 648, 794]
+TUNE cat_h1n1_vaccine trial=0 auc=0.867887 iterations=[542, 674, 636]
+TUNE cat_h1n1_vaccine trial=1 auc=0.866873 iterations=[146, 204, 174]
+TUNE cat_h1n1_vaccine trial=2 auc=0.868416 iterations=[285, 285, 237]
+TUNE cat_h1n1_vaccine trial=3 auc=0.867840 iterations=[323, 322, 440]
+TUNE cat_h1n1_vaccine trial=4 auc=0.868137 iterations=[525, 738, 453]
+TUNE cat_h1n1_vaccine trial=5 auc=0.868074 iterations=[309, 231, 257]
+TUNE cat_seasonal_vaccine trial=0 auc=0.862073 iterations=[696, 478, 480]
+TUNE cat_seasonal_vaccine trial=1 auc=0.863238 iterations=[759, 428, 567]
+TUNE cat_seasonal_vaccine trial=2 auc=0.862262 iterations=[565, 1190, 598]
+TUNE cat_seasonal_vaccine trial=3 auc=0.862506 iterations=[334, 240, 260]
+TUNE cat_seasonal_vaccine trial=4 auc=0.862499 iterations=[739, 614, 363]
+TUNE cat_seasonal_vaccine trial=5 auc=0.862395 iterations=[732, 537, 442]
+FROZEN BLEND h1n1_vaccine dev_auc=0.870775 weights=[0.3333333333333333, 0.3333333333333333, 0.3333333333333333] mode=probability
+FROZEN BLEND seasonal_vaccine dev_auc=0.864953 weights=[0.3333333333333333, 0.3333333333333333, 0.3333333333333333] mode=probability
+HOLDOUT lgb h1n1_vaccine auc=0.873860
+FINAL lgb h1n1_vaccine fold=0 auc=0.875609
+FINAL lgb h1n1_vaccine fold=1 auc=0.864528
+FINAL lgb h1n1_vaccine fold=2 auc=0.871297
+FINAL lgb h1n1_vaccine fold=3 auc=0.868320
+FINAL lgb h1n1_vaccine fold=4 auc=0.884068
+HOLDOUT lgb seasonal_vaccine auc=0.862649
+FINAL lgb seasonal_vaccine fold=0 auc=0.864132
+FINAL lgb seasonal_vaccine fold=1 auc=0.859988
+FINAL lgb seasonal_vaccine fold=2 auc=0.873602
+FINAL lgb seasonal_vaccine fold=3 auc=0.857402
+FINAL lgb seasonal_vaccine fold=4 auc=0.865011
+HOLDOUT xgb h1n1_vaccine auc=0.871840
+FINAL xgb h1n1_vaccine fold=0 auc=0.876170
+FINAL xgb h1n1_vaccine fold=1 auc=0.864154
+FINAL xgb h1n1_vaccine fold=2 auc=0.870200
+FINAL xgb h1n1_vaccine fold=3 auc=0.865227
+FINAL xgb h1n1_vaccine fold=4 auc=0.884562
+HOLDOUT xgb seasonal_vaccine auc=0.865741
+FINAL xgb seasonal_vaccine fold=0 auc=0.864978
+FINAL xgb seasonal_vaccine fold=1 auc=0.860850
+FINAL xgb seasonal_vaccine fold=2 auc=0.873370
+FINAL xgb seasonal_vaccine fold=3 auc=0.857656
+FINAL xgb seasonal_vaccine fold=4 auc=0.866232
+HOLDOUT cat h1n1_vaccine auc=0.871557
+FINAL cat h1n1_vaccine fold=0 auc=0.872874
+FINAL cat h1n1_vaccine fold=1 auc=0.860885
+FINAL cat h1n1_vaccine fold=2 auc=0.869553
+FINAL cat h1n1_vaccine fold=3 auc=0.866020
+FINAL cat h1n1_vaccine fold=4 auc=0.884862
+HOLDOUT cat seasonal_vaccine auc=0.864119
+FINAL cat seasonal_vaccine fold=0 auc=0.864181
+FINAL cat seasonal_vaccine fold=1 auc=0.859408
+FINAL cat seasonal_vaccine fold=2 auc=0.873247
+FINAL cat seasonal_vaccine fold=3 auc=0.856283
+FINAL cat seasonal_vaccine fold=4 auc=0.865737
+{
+  "holdout_n": 5876,
+  "holdout_mean_auc": 0.8696010760318691,
+  "holdout_target_auc": [
+    0.8737632762116879,
+    0.8654388758520504
+  ],
+  "final_cv_mean_auc": 0.8692248099218046,
+  "final_cv_note": "Descriptive, not independent of hyperparameter selection. Holdout evaluated after recipe freeze.",
+  "official_score": null,
+  "official_rank": null
+}
+DONE

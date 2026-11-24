@@ -1,0 +1,19 @@
+{
+  "seed": 20261115,
+  "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jun 18 2026, 21:19:57) [Clang 20.1.8 ]",
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "catboost": "1.2.10",
+    "optuna": "5.0.0"
+  },
+  "sha256": {
+    "training_set_labels.csv": "0ad33a821b96666a0dbfafc4e6fe23969ded212c6b55eb8763bd8bd78b8cae40",
+    "submission_format.csv": "9a6cfd8e7d75f4d0586f59ec50d27947c5c2d546e25db80bce29df53ebee3a35",
+    "training_set_features.csv": "9a805f24b45fd9bd0b52cedf7cab0ccc62b512372f00151b028b004b0973d1e5",
+    "test_set_features.csv": "fbb8e4f208c222a1559c701dd351e5db8fc12c1671393a009bdc055830fa42b5"
+  }
+}

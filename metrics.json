@@ -1,0 +1,12 @@
+{
+  "holdout_n": 5876,
+  "holdout_mean_auc": 0.8696010760318691,
+  "holdout_target_auc": [
+    0.8737632762116879,
+    0.8654388758520504
+  ],
+  "final_cv_mean_auc": 0.8692248099218046,
+  "final_cv_note": "Descriptive, not independent of hyperparameter selection. Holdout evaluated after recipe freeze.",
+  "official_score": null,
+  "official_rank": null
+}

@@ -1,0 +1,20 @@
+JOINT SCREEN {'index': 0, 'auc': 0.8675348405898536, 'iterations': [769, 888, 497], 'engineering': False, 'params': {'num_leaves': 7, 'learning_rate': 0.035, 'min_child_samples': 70, 'colsample_bytree': 0.8, 'subsample': 0.9, 'reg_lambda': 8, 'cat_smooth': 30, 'max_cat_to_onehot': 32}}
+JOINT SCREEN {'index': 1, 'auc': 0.8676330031383188, 'iterations': [387, 365, 290], 'engineering': False, 'params': {'num_leaves': 15, 'learning_rate': 0.035, 'min_child_samples': 70, 'colsample_bytree': 0.8, 'subsample': 0.9, 'reg_lambda': 8, 'cat_smooth': 30, 'max_cat_to_onehot': 32}}
+JOINT SCREEN {'index': 2, 'auc': 0.8677927775989618, 'iterations': [241, 268, 200], 'engineering': False, 'params': {'num_leaves': 25, 'learning_rate': 0.035, 'min_child_samples': 70, 'colsample_bytree': 0.8, 'subsample': 0.9, 'reg_lambda': 8, 'cat_smooth': 30, 'max_cat_to_onehot': 32}}
+JOINT SCREEN {'index': 3, 'auc': 0.8667561063110292, 'iterations': [595, 578, 478], 'engineering': True, 'params': {'num_leaves': 7, 'learning_rate': 0.035, 'min_child_samples': 70, 'colsample_bytree': 0.8, 'subsample': 0.9, 'reg_lambda': 8, 'cat_smooth': 30, 'max_cat_to_onehot': 32}}
+JOINT SCREEN {'index': 4, 'auc': 0.8670857564377475, 'iterations': [254, 272, 233], 'engineering': True, 'params': {'num_leaves': 15, 'learning_rate': 0.035, 'min_child_samples': 70, 'colsample_bytree': 0.8, 'subsample': 0.9, 'reg_lambda': 8, 'cat_smooth': 30, 'max_cat_to_onehot': 32}}
+JOINT SCREEN {'index': 5, 'auc': 0.8668335793480023, 'iterations': [217, 236, 184], 'engineering': True, 'params': {'num_leaves': 25, 'learning_rate': 0.035, 'min_child_samples': 70, 'colsample_bytree': 0.8, 'subsample': 0.9, 'reg_lambda': 8, 'cat_smooth': 30, 'max_cat_to_onehot': 32}}
+JOINT WEIGHTS [0.5, 0.5]
+{
+  "joint_weights": [
+    0.5,
+    0.5
+  ],
+  "joint_development_auc": 0.8677927775989618,
+  "base_development_auc": 0.8678639664565442,
+  "blended_development_auc": 0.8689032629900717,
+  "joint_holdout_auc": 0.8686361088891577,
+  "blended_holdout_auc": 0.8700386075191642,
+  "blended_descriptive_cv_auc": 0.8704893027290536,
+  "official_score": null
+}

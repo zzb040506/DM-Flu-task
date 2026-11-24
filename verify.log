@@ -1,0 +1,72 @@
+{
+  "submission_foldbag.csv": {
+    "rows": 26708,
+    "sha256": "f7e688a2e6e5f88bafba859c5a551554b214fb12abe5af1afb01cce0688bfa8f",
+    "range": [
+      0.0044842406,
+      0.9897775853
+    ]
+  },
+  "submission_fullbag.csv": {
+    "rows": 26708,
+    "sha256": "7ef6205e1c4a87a3bc3f8f14ad900d5652b33ebfbe6ad1c6c65b1ff01c4e267a",
+    "range": [
+      0.0042098916,
+      0.990898858
+    ]
+  },
+  "submission_joint_foldbag.csv": {
+    "rows": 26708,
+    "sha256": "db68b04073ec424efbe9227af776d9ccc9a4665b2140a0144d7ed7e1ba9f11c6",
+    "range": [
+      0.004359629,
+      0.9899931207
+    ]
+  },
+  "submission_joint_fullbag.csv": {
+    "rows": 26708,
+    "sha256": "56bcf7ed7b0202024cfe8ea6ef2acdc8dc37e73c3d36cfe6a8075a484113e6c1",
+    "range": [
+      0.0040706721,
+      0.9901379366
+    ]
+  },
+  "submission_joint_robust.csv": {
+    "rows": 26708,
+    "sha256": "39f6df72167682c1c20e7634ce801a873f15d6fa7b3226a57b2316c46f4a114c",
+    "range": [
+      0.0042786047,
+      0.9899729072
+    ]
+  },
+  "submission_robust.csv": {
+    "rows": 26708,
+    "sha256": "0750b41a92f102d27abfb53db554ec4a87ca964e77766d7d0de48672b098eca7",
+    "range": [
+      0.0043643662,
+      0.9903382216
+    ]
+  },
+  "paired_holdout_comparison": {
+    "new_auc": 0.8696010760318691,
+    "smith_lgb_auc": 0.8684088568690607,
+    "difference": 0.0011922191628084278,
+    "bootstrap_95pct_difference": [
+      0.00015192927424448333,
+      0.0021879597242326267
+    ],
+    "bootstrap_replicates": 1000,
+    "note": "Paired row bootstrap, conditional on the trained models; does not cover training variability or official test distribution."
+  },
+  "joint_paired_holdout_comparison": {
+    "new_auc": 0.8700386075191642,
+    "smith_lgb_auc": 0.8684088568690607,
+    "difference": 0.001629750650103512,
+    "bootstrap_95pct_difference": [
+      0.0005986200289947619,
+      0.0027202140383175114
+    ],
+    "bootstrap_replicates": 1000,
+    "note": "Conditional row bootstrap; not official test uncertainty."
+  }
+}

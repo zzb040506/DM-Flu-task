@@ -1,0 +1,20 @@
+{
+  "index": 2,
+  "auc": 0.8677927775989618,
+  "iterations": [
+    241,
+    268,
+    200
+  ],
+  "engineering": false,
+  "params": {
+    "num_leaves": 25,
+    "learning_rate": 0.035,
+    "min_child_samples": 70,
+    "colsample_bytree": 0.8,
+    "subsample": 0.9,
+    "reg_lambda": 8,
+    "cat_smooth": 30,
+    "max_cat_to_onehot": 32
+  }
+}
